@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: cursive;
+}
+/* navbar */
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+#nav .part1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+#nav .part1 a {
+  color: rgb(0, 4, 255);
+}
+#nav .part2 {
+  margin-right: 20px;
+}
+#nav .part2 input {
+  border: 1px solid #0dcaf0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  height: 35px;
+}
+#nav .part2 button {
+  background-color: #0dcaf0;
+  border: 1px solid #0dcaf0;
+  width: 70px;
+}
+#nav .part2 button:hover {
+  background-color: #5cdef8;
+  border: 1px solid #5cdef8;
+}
+.navbar-toggler {
+  z-index: 100;
+}
+ul li {
+  color: #0dcaf0;
+}
+ul li:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  margin-top: 5px;
+  text-shadow: 5px 5px 20px rgb(19, 111, 136), -5px -5px 20px rgb(136, 19, 126);
+  z-index: 1;
+}
+ul li:hover span {
+  color: rgb(80, 3, 80);
+}
+
+/* <!-- CAROUSEL --> */
+#demo .carousel-inner {
+  position: relative;
+  background: rgba(86, 184, 190, 0.5);
+  border-radius: 10px;
+}
+#demo .carousel-inner .information {
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+  height: 170px;
+  background-color: #0dcaf0;
+  margin: auto;
+  text-align: center;
+  background: rgba(86, 184, 190, 0.5);
+}
+#demo .carousel-inner .information button {
+  background-color: #0dcaf0;
+  margin-bottom: 10px;
+  color: white;
+}
+#demo .carousel-inner .information button:hover {
+  background-color: #4cd4f0;
+  color: black;
+}
+/* cards */
+.card-body {
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  position: relative;
+}
+.card-body #button {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+.cardover {
+  position: relative;
+}
+#cardover::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  background-color: #0dcaf0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+#cardover:hover::after {
+  width: 100%;
+  height: 100%;
+}
+#cardover::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  opacity: 0.25;
+  right: 0;
+  bottom: 0;
+  background-color: #0dcaf0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+#cardover:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+/* img overlay */
+
+#card-conatner-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 400px;
+  height: 350px;
+  background-image: url("../imgs/mohamed.jpeg");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  margin-top: 100px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  filter: grayscale(100%);
+}
+#card-conatner-overlay:hover {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  filter: brightness(0.5);
+}
+#card-conatner-overlay2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 400px;
+  height: 350px;
+  background-image: url("../imgs/islam.jpg");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  margin-top: 100px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  filter: grayscale(100%);
+}
+#card-conatner-overlay2:hover {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  filter: brightness(0.5);
+}
+#card-conatner-overlay3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 400px;
+  height: 350px;
+  background-image: url("../imgs/sally.jpeg");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  margin-top: 100px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  filter: grayscale(100%);
+}
+#card-conatner-overlay3:hover {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  filter: brightness(0.5);
+}
+#overlay2 {
+  width: 400px;
+  height: 350px;
+}
+/* egypt news */
+.postcard {
+  position: relative;
+  margin-top: 50px;
+  box-shadow: 0 4px 21px -12px rgba(206, 17, 165, 0.66);
+  overflow: hidden;
+}
+.postcard {
+  margin-top: 50px;
+}
+.postcard__text {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  background-color: #ccc;
+}
+.postcard__bar {
+  width: 50px;
+  height: 6px;
+  background-color: red;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-left: 8px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+#aritcal1:hover .postcard__bar {
+  width: 120px;
+}
+.postcard__text {
+  position: relative;
+  height: 350px;
+}
+.postcard__text h1 {
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 30px;
+  font-family: cursive;
+}
+.postcard__text h1 a {
+  text-decoration: none;
+  color: rgb(8, 59, 57);
+}
+.postcard__text h1 a:hover {
+  color: rgb(101, 206, 241);
+}
+.postcard__text .postcard__subtitle {
+  margin-left: 50px;
+}
+.postcard__text .postcard__bar {
+  margin-left: 55px;
+  margin-top: 10px;
+}
+.postcard__text1 {
+  position: relative;
+  background-color: #ccc;
+  height: 350px;
+}
+.postcard__text1 h1 {
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 30px;
+  font-family: cursive;
+}
+.postcard__text1 h1 a {
+  text-decoration: none;
+  color: rgb(8, 59, 57);
+}
+.postcard__text1 h1 a:hover {
+  color: rgb(101, 206, 241);
+}
+.postcard__text1 .postcard__subtitle {
+  margin-left: 50px;
+}
+.postcard__text1 .postcard__bar {
+  margin-left: 55px;
+  margin-top: 10px;
+}
+.postcard__preview-txt {
+  margin-left: 55px;
+  margin-top: 10px;
+}
+.postcard__tagbox {
+  margin-top: 80px;
+  margin-left: 50px;
+  list-style: none;
+}
+.postcard__tagbox .tag__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #898a8a;
+  margin-left: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.postcard__tagbox .tag__item2 i {
+  margin-left: 5px;
+  color: rgb(8, 59, 57);
+}
+
+.postcard__tagbox .tag__item i {
+  margin-left: 5px;
+}
+.postcard__tagbox .tag__item a {
+  color: rgb(8, 59, 57);
+  text-decoration: none;
+}
+.postcard__text::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 360px;
+  margin-left: -18px;
+  margin-top: 2px;
+  background-color: #ccc;
+  transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  border-bottom-right-radius: 28px;
+}
+.postcard__text1::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 360px;
+  margin-left: -18px;
+  margin-top: 2px;
+  background-color: #ccc;
+  transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  right: -35px;
+  top: -1.5px;
+  border-bottom-left-radius: 5px;
+}
+.logoicon {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.logoicon:hover {
+  opacity: 0.5;
+}
+/* footer */
